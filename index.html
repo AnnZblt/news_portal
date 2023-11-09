@@ -6,11 +6,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Mulish&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <script src="scripts/index.js" type="module"></script>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__menu">
+        <button class="burger__menu"></button>
+      </div>
+      <div class="header__logo">
+        <a href="#" class="logo__link">
+          <img class="header__logo_img" src="./images/news_logo.png" alt="Логотип портала новостей">
+        </a>
+      </div>
+      <div class="header__search">
+        <div class="search__wrapper">
+          <form class="header__search_form" role="search" method="get">
+            <input class="header__search_input hidden" type="search" name="searchRequest">
+            <button class="header__search_button hidden" type="submit" name="searchButton"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main class="main">
+    <div class="main__container container">
+
+      <div class="search__news news__wrapper">
+      </div>
+
+      <div class="headlines__news news__wrapper">
+      </div>
+
+
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo">
+        <a href="#" class="logo__link">
+          <img class="footer__logo_img" src="./images/news_logo.png" alt="Логотип портала новостей">
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright_text">© 2023 BestNews</p>
+      </div>
+      <div class="footer__socials">
+        <a href="#" class="footer__socials_link twitter"></a>
+        <a href="#" class="footer__socials_link whatsapp"></a>
+        <a href="#" class="footer__socials_link vkontakte"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
